@@ -13,9 +13,9 @@ tags: iOS
 
 ![img](/assets/images/2016/Xcode中TimeProfile使用-1.png))
 
-2、不为该选项的话，在timeProfile中就只能看到一堆线程
+2、不为该选项的话，在TimeProfile中就只能看到一堆线程
 
-### 二、TimeProfile进行设置
+### 二、对TimeProfile进行设置
 
 1、在TimeProfile的Call Tree中，右侧面板有三个检查器：record setting（记录设置）、display setting（展示设置）、还有extends detail（扩展详情）
 
