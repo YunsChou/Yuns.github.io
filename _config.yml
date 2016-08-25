@@ -1,7 +1,7 @@
 # Basic
 title: YunsChou
 subtitle: 既然选择了远方，便只顾风雨兼程
-description: 我是YunChou，一名iOS开发者，这里是我用来记录平时学习的地方
+description: 我是YunChou，一名iOS开发者
 welcome_message: 欢迎你的访问
 creator: <a href="http://yunschou.github.io">@YunsChou</a>
 
@@ -37,7 +37,7 @@ paginate_path: "page/:num/"
 comment:
     disqus: vno-jekyll
     # duoshuo: 
-    
+
 # Social
 social:
     weibo: u/1846084097
