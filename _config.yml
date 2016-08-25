@@ -25,7 +25,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: 关于, description: 封面信息, url: 'http://yunschou.github.io'}
+    - {title: 关于, description: 快速入口, url: 'https://github.com/YunsChou/Python-WSGI-OC-APP'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
