@@ -2,7 +2,7 @@
 layout: post
 title: Xcode中TimeProfile使用
 date: 2016-08-22 21:30:46
-tags: iOS
+tags: Xcode
 ---
 
 ### 一、对Xcode进行设置
