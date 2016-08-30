@@ -31,7 +31,7 @@ tags: openshift
 四、访问你的域名吧：[python-yunschou.rhcloud.com](https://python-yunschou.rhcloud.com/)
 
 格式为：appname-domain.rhcloud.com（domain.rhcloud.com是不可访问的）
-因为你没有上传任何代码，首次进入显示为服务器默认的页面，如下
+因为你没有上传任何代码，首次进入显示为服务器默认的页面，如下：
 
 ![img](/assets/images/2016/openshift-guide-1-4.png)
 
