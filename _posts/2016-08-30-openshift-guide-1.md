@@ -5,11 +5,11 @@ date: 2016-08-30 19:00:00
 tags: openshift
 ---
 
-### 一、注册openshift账号：快去官网注册吧
+一、注册openshift账号：快去官网注册吧
 
-### 二、开启你的个人域名：如果在这一步没有单独填写个人域名，在创建第一个应用的时候也会要求填写，可直接进入步骤3
+二、开启你的个人域名：如果在这一步没有单独填写个人域名，在创建第一个应用的时候也会要求填写，可直接进入步骤3
 
-### 三、创建第一个应用：这里以创建一个Python应用为例
+三、创建第一个应用：这里以创建一个Python应用为例
 
 1、添加一个应用：【add application】
 
@@ -28,7 +28,7 @@ tags: openshift
 
 小技巧：点击创建应用后，可能需要等很久（可能是我这网络或被墙的问题），等待1分钟左右还没有进入，可以直接返回，此时在你的application中，应用已经创建成功了  
 
-### 四、访问你的域名吧：[python-yunschou.rhcloud.com](https://python-yunschou.rhcloud.com/)
+四、访问你的域名吧：[python-yunschou.rhcloud.com](https://python-yunschou.rhcloud.com/)
 
 格式为：appname-domain.rhcloud.com（domain.rhcloud.com是不可访问的）
 因为你没有上传任何代码，首次进入显示为服务器默认的页面，如下
