@@ -7,7 +7,7 @@ tags: openshift
 
 ### 一、添加flask依赖
 
-##### 1、准备git基本知识
+#### 1、准备git基本知识
 
 进入openshift中我们创建好的应用
 
@@ -26,7 +26,7 @@ tags: openshift
 
 Flask是一个使用Python编写的轻量级Web应用框架，详细请参考：[ Flask 文档（中文版）](http://www.pythondoc.com/flask/index.html)
 
-##### 3、为应用添加第三方依赖库
+#### 3、为应用添加第三方依赖库
 
 依赖关系可以被添加到Python应用程序下的requirements.txt或setup.py中
 
@@ -46,7 +46,7 @@ install_requires=['Flask>=0.10.1']
 
 ### 二、修改主页内容
 
-##### 1、项目结构和目录
+#### 1、项目结构和目录
 
 可以看到我们`git clone`下来的文件名为`python`（openshift中项目名称），其中目录结构如下：
 
@@ -62,7 +62,7 @@ install_requires=['Flask>=0.10.1']
 
 我们可以通过修改wsgi.py里面的代码，来修改主页内容
 
-##### 2、简单的操作方法
+#### 2、简单的操作方法
 
 因为这里只讲解如何操作，所以我们以最简单的方式来实现（截图）
 
