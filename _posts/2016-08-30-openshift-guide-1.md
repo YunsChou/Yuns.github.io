@@ -7,47 +7,25 @@ tags: openshift
 
 ### 一、注册openshift账号
 
-
-
 快去官网注册吧
-
-
 
 ### 二、开启你的个人域名
 
-
-
 如果在这一步没有单独填写个人域名，在创建第一个应用的时候也会要求填写，可直接进入`步骤三`
-
-
 
 ### 三、创建第一个应用
 
-
-
 这里以创建一个Python应用为例
-
-
 
 #### 1、添加一个应用：【add application】
 
-
-
 ![img](/assets/images/2016/openshift-guide-1-1.png)
-
-
 
 #### 2、选择你的应用类型：很多博客使用wordpress
 
-
-
 ![img](/assets/images/2016/openshift-guide-1-2.png)
 
-
-
 #### 3、填写应用名称：我选择的应用类型为python，名称默认为python（可以修改）
-
-
 
 说明：如果`步骤二`还没有填写个人域名，在Public URL处，`应用名称和个人域名`都是必填的（`应用名：python`-`域名：yunschou`-后缀默认：rhcloud.com）。也就是说，可以在首次创建应用的时候填写个人域名
 
@@ -57,11 +35,7 @@ tags: openshift
 
 小技巧：点击创建应用后，可能需要等很久（可能是我这网络或被墙的问题），等待1分钟左右还没有进入，可以直接返回，此时在你的application中，应用已经创建成功了  
 
-
-
 ### 四、访问你的域名吧
-
-
 
 [python-yunschou.rhcloud.com](https://python-yunschou.rhcloud.com/)
 
