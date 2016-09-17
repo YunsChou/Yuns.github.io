@@ -67,7 +67,9 @@ tags: openshift
 
 终于到了激动人心的时刻，快查看你自己实现的API吧
 
-我的：[https://python-yunschou.rhcloud.com/hot](https://python-yunschou.rhcloud.com/hot)
+我的线上API访问结果如下：[https://python-yunschou.rhcloud.com/hot](https://python-yunschou.rhcloud.com/hot)
+
+![img](/assets/images/2016/openshift-guide-4-7.png)
 
 
 
