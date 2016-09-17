@@ -5,9 +5,9 @@ date: 2016-09-17 15:00:00
 tags: openshift
 ---
 
-**前提**：爬虫框架`BeautifulSoup`和`flask中jsonify`的简单使用
+**前提**：请先学习爬虫框架`BeautifulSoup`和`flask中jsonify`的简单使用
 
-1、请先学习如何简单的使用爬虫框架BeautifulSoup，可以通过慕课网上的课程学习：[Python开发简单爬虫](http://www.imooc.com/learn/563)
+1、如何简单的使用爬虫框架BeautifulSoup，可以通过慕课网上的课程学习：[Python开发简单爬虫](http://www.imooc.com/learn/563)
 
 2、使用jsonify将数据转为`JSON`格式
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【openshift-3】添加Flask等第三方库+部署自己的应用
-date: 2016-09-10 19:00:00
+date: 2016-09-10 20:00:00
 tags: openshift
 ---
 
@@ -77,7 +77,7 @@ install_requires=['Flask>=0.10.1']
 
   ![img](/assets/images/2016/openshift-guide-3-5.png)
 
-* 项目结构如下
+* 此时，项目结构如下
 
   ![img](/assets/images/2016/openshift-guide-3-6.png)
 

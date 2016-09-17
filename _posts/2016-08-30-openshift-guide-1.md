@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【openshift-1】openshift免费服务+创建应用
-date: 2016-08-30 19:00:00
+date: 2016-08-30 20:00:00
 tags: openshift
 ---
 

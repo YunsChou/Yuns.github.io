@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【openshift-2】为Python应用添加MySQL+phpMyAdmin
-date: 2016-08-30 20:00:00
+date: 2016-08-31 20:00:00
 tags: openshift
 ---
 
