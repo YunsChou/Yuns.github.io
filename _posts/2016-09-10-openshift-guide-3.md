@@ -7,7 +7,7 @@ tags: openshift
 
 **前提**：请先学习git和flask的简单使用
 
-1、我们的操作只需要基础的git知识，如何使用git，Pro Git（中文版）](http://git.oschina.net/progit/)
+1、我们的操作只需要基础的git知识，如何使用git：[Pro Git（中文版）](http://git.oschina.net/progit/)
 
 需要达到：将线上的项目`clone`到本地，将本地修改后的项目`push`到线上
 
