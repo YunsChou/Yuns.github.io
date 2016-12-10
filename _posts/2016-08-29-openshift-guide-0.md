@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【openshift-0】使用Python在openshift上生成在线API
+title: 【openshift-序】使用Python在openshift上生成在线API
 date: 2016-08-29 20:00:00
 tags: openshift
 ---
