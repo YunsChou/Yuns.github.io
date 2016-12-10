@@ -15,7 +15,7 @@ tags: openshift
 
 ### 二、目标
 
-#### **目标：通过openshift的提供的免费服务，使用Python开发在线可访问的API**
+#### **目标：通过openshift提供的免费服务，使用Python开发在线可访问的API**
 
 前期探索：工作之外学习过一段时间Ruby和PHP，要么觉得相关资料较少，要么觉得自己有点不适应(没有实际项目练过手)，学而不能时习之，现在差不多荒废了。自从接触Python后，感觉敲起来得心应手（可能与前期学习过Ruby/PHP也有一定关系），一个字：`爽`！（人生苦短，我用Python）
 
@@ -29,7 +29,7 @@ tags: openshift
 
 必备知识：git的简单使用
 
-语言及框架：Python基础，flask和beautifulsoup框架的简单使用
+语言及框架：Python基础，Flask和Beautifulsoup框架的简单使用
 
 ### 四、阅读指引
 
