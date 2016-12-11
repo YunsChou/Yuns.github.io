@@ -11,9 +11,9 @@ tags: Xcode
 
 在Xcode->Build Setting->Debug Information Format中设置选项为：**DWARF with DSYM File**
 
-![img](/assets/images/2016/Xcode中TimeProfile使用-1.png))
+![img](/assets/images/2016/Xcode中TimeProfile使用-1.png)
 
-注意：不为该选项的话，在TimeProfile中就只能看到一堆线程
+*注意：不为`DWARF with DSYM File`选项的话，在TimeProfile中就只能看到一堆线程*
 
 ### 二、对TimeProfile进行设置
 

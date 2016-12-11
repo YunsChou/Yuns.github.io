@@ -19,7 +19,7 @@ Database有三种供选择，因为我使用的是MySQL数据库，所以点击�
 
 ![img](/assets/images/2016/openshift-guide-2-2.png)
 
-点击上图红框处，添加phpMyAdmin—>
+*点击上图红框处，添加phpMyAdmin*
 
 ### 三、使用phpMyAdmin对MySQL进行管理
 

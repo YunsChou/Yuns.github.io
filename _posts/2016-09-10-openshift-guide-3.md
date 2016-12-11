@@ -41,13 +41,13 @@ tags: openshift
 Flask==0.10.1
 ```
 
-如在setup.py添加，代码为（本教程在setup.py中添加第三方依赖库）：
+如在setup.py添加，代码为：
 
 ```
 install_requires=['Flask>=0.10.1']
 ```
 
-*不要着急，在下面的步骤会有具体的演示操作*
+*本教程在setup.py中添加第三方依赖库，在下面的步骤会有具体的演示操作*
 
 
 
