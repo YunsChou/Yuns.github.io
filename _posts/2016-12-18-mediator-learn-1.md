@@ -40,13 +40,9 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 1、传入参数分别为：`对象名称`、`动作名称`、`参数`、`是否缓存对象名称`
 
-* `对象名称`：单独的`组件/模块`（repo）名，传入的`targetName`在CTMediator中会被拼接为字符串`Target_targetName`（可以理解为`类名`），然后通过`NSClassFromString`将字符串转为应的`类`。
+* `对象名称`：单独的`组件/模块`（repo）名，传入的`targetName`在CTMediator中会被拼接为字符串`Target_targetName`（可以理解为`类名`），然后通过`NSClassFromString`将字符串转为应的`类`。如：需要集成`A`模块。传入`A`，会被拼接成`Target_A`，然后被转换为**[`Target_A` Class]**
 
-  如：需要集成`A`模块。传入`A`，会被拼接成`Target_A`，然后被转换为**[`Target_A` Class]**
-
-* `动作名称`：当拥有一个`对象`后，我们需要调用这个对象的`方法`来做一些事情，传入的`actionName`在CTMediator中会被拼接为字符串`Action_actionName:`（可以理解为`方法名`），然后通过`NSSelectorFromString`将字符串转为应的`对象方法`
-
-  如：`模块A`需要`被push`出来。传入`isPushed`，会被拼接成`Action_isPushed:`，然后被转换为**[`Action_isPushed` SEL]**
+* `动作名称`：当拥有一个`对象`后，我们需要调用这个对象的`方法`来做一些事情，传入的`actionName`在CTMediator中会被拼接为字符串`Action_actionName:`（可以理解为`方法名`），然后通过`NSSelectorFromString`将字符串转为应的`对象方法`。如：`模块A`需要`被push`出来。传入`isPushed`，会被拼接成`Action_isPushed:`，然后被转换为**[`Action_isPushed` SEL]**
 
 * `参数`：当使用`对象`执行`方法`时，我们可能还需要一些`参数`来进行逻辑判断或往下传递，参数以`NSDictionary`对象传入
 
