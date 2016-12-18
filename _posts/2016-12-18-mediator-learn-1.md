@@ -72,4 +72,5 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 #### 本地组件调用方式小结：
 
-* 调用顺序：**`CTMediator+A`** 中调用`performTarget: action: params: shouldCacheTarget:`  ——> 在**`CTMediator`**通过传入的targetName（A），找到**`Target_A`** 对象——>通过传入的actionName（isPushed:），找到`Target_A`对象中的对象方法**`Action_isPushed:`** 
+* 调用顺序：**`CTMediator+A`** 中通过`A_viewController:`调用`performTarget: action: params: shouldCacheTarget:`  ——> 在**`CTMediator`**中通过传入的targetName（A），找到**`Target_A`** 对象，通过传入的actionName（isPushed:），找到`Target_A`对象中的对象方法**`Action_isPushed:`** ——> `Target_A`对象调用`Action_isPushed:`方法，返回业务逻辑处理后的**`AViewController对象`**
+* 模块分工：`CTMediator+A`决定调用哪个`Target`和`Action`，并将`参数`一并传递给`CTMediator`；`CTMediator`通过`字符串拼接和runtime`去找`Target_A`和对象方法`Action_isPushed:`，并使`Target_A`对象调用对象方法`Action_isPushed:`；`Target_A`在`Action_isPushed:`中通过接收到的参数处理各种业务逻辑，并返回`AViewController对象`
