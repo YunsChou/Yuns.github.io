@@ -84,11 +84,12 @@ pod lib lint
 
 4、验证通过后，使用 `git push` 将代码提交到github
 
->  小结：（示例代码[YSTestPodsMe]([https://github.com/YunsChou/YSTestPodsMe](https://github.com/YunsChou/YSTestPodsMe))，`不`可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，需要添加仓库引用路径）
->
->  至此，如果该库只供自己或团队使用，到这里就算完成了。在Podfile中引用：
+>  小结：示例代码[YSTestPodsMe]([https://github.com/YunsChou/YSTestPodsMe](https://github.com/YunsChou/YSTestPodsMe))，`不`可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，需要添加仓库引用路径。在Podfile中引用：
 >
 >  pod 'YSPodsMe', :git => 'https://github.com/YunsChou/YSTestPodsMe.git'
+>
+>  至此，如果该库只供自己或团队使用，到这里就算完成了
+>
 
 ***
 
@@ -131,9 +132,10 @@ pod trunk push YSPods.podspec
 
 5、等待一段时间（可能是几分钟或几十分钟），在 [https://cocoapods.org](https://cocoapods.org) 中检索自己的框架
 
-> 小结：（示例代码[YSTestPods]([[https://github.com/YunsChou/YSTestPods](https://github.com/YunsChou/YSTestPods))，可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，`不`需要添加仓库引用路径，*本质上默认路径就是cocopods的路径*）
->
-> 至此，使自己的框架通过cocoapods `仅支持内部使用`和 `开源给其他开发者使用`，到这里都完成了。在Podfile中引用：
+> 小结：示例代码[YSTestPods]([[https://github.com/YunsChou/YSTestPods](https://github.com/YunsChou/YSTestPods))，可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，`不`需要添加仓库引用路径，*本质上默认路径就是cocopods的路径*。在Podfile中引用：
 >
 > pod 'YSPods'
+>
+> 至此，使自己的框架通过cocoapods `仅支持内部使用`和 `开源给其他开发者使用`，到这里都完成了
+>
 
