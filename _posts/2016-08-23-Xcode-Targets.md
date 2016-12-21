@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xcode中Targets使用
+title: Xcode中Targets使用(多图，非WI-FI慎入)
 date: 2016-08-23 00:00:00
 tags: Xcode
 ---
@@ -39,53 +39,99 @@ tags: Xcode
 
 ### 二、操作截图
 
+* 创建工程
+
 ![img](/assets/images/2016/Xcode中Targets使用-1.png)
+
+* 使用`Duplicate`添加targets
 
 ![img](/assets/images/2016/Xcode中Targets使用-2.png)
 
+* 选择`Duplicate Only`（按需选择）
+
 ![img](/assets/images/2016/Xcode中Targets使用-3.png)
+
+* 新增targets后如下：多了targets和对应的info.plist文件
 
 ![img](/assets/images/2016/Xcode中Targets使用-4.png)
 
+* 修改target名称
+
 ![img](/assets/images/2016/Xcode中Targets使用-5.png)
 
+* 修改后如下
+
 ![img](/assets/images/2016/Xcode中Targets使用-6.png)
+
+* 修改info.plist文件路径，并重命名
 
 ![img](/assets/images/2016/Xcode中Targets使用-7.png)
 
 ![img](/assets/images/2016/Xcode中Targets使用-8.png)
 
+* Xcode中提示找不到被重命名的info.plist文件（删除红色的文件）
+
 ![img](/assets/images/2016/Xcode中Targets使用-9.png)
+
+* 使用`add Files to 'TargetsDemo'...`从工程文件夹下添加被重命名的info.plist文件
 
 ![img](/assets/images/2016/Xcode中Targets使用-10.png)
 
+* 添加完成后如下
+
 ![img](/assets/images/2016/Xcode中Targets使用-11.png)
+
+* 在Targets_A和Targets_B中使用`Choose info.plist File...`添加对应的info.plist文件
 
 ![img](/assets/images/2016/Xcode中Targets使用-12.png)
 
+* 添加完成后如下
+
 ![img](/assets/images/2016/Xcode中Targets使用-13.png)
+
+* 为targets添加app图标（启动图类似）
 
 ![img](/assets/images/2016/Xcode中Targets使用-14.png)
 
+* 重命名原`appicon`名称
+
 ![img](/assets/images/2016/Xcode中Targets使用-15.png)
+
+* 重命名后如下
 
 ![img](/assets/images/2016/Xcode中Targets使用-16.png)
 
+* 为targets选择对应的app图标
+
 ![img](/assets/images/2016/Xcode中Targets使用-17.png)
+
+* 为targets设置预编译宏
 
 ![img](/assets/images/2016/Xcode中Targets使用-8.png)
 
+* 添加完成后如下
+
 ![img](/assets/images/2016/Xcode中Targets使用-9.png)
+
+* 使用`Manage Schemes…`修改Schemes名称
 
 ![img](/assets/images/2016/Xcode中Targets使用-20.png)
 
 ![img](/assets/images/2016/Xcode中Targets使用-21.png)
 
+* 修改后，点击`Close`
+
 ![img](/assets/images/2016/Xcode中Targets使用-22.png)
+
+* 修改完成后如下
 
 ![img](/assets/images/2016/Xcode中Targets使用-23.png)
 
+* 使用预编译宏为targets添加条件
+
 ![img](/assets/images/2016/Xcode中Targets使用-24.png)
+
+* 不同targets运行后应该是不同的product
 
 ![img](/assets/images/2016/Xcode中Targets使用-25.png)
 
