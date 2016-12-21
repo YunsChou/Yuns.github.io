@@ -23,7 +23,7 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 ### 源码分析
 
-> 提供的API：分别为`远程app调用入口`、`本地组件调用入口`、`释放某个target缓存`
+> 提供的API分别为：`远程app调用入口`、`本地组件调用入口`、`释放某个target缓存`
 
 ```
 // 远程App调用入口
@@ -53,7 +53,7 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 * target：先去缓存中取，如果为空则创建；创建之后还为空，说明根据字符串`Target_targetName`无法找到对应的类，则返回nil（实际开发过程中可以事先给一个固定的target，专门用于在这个时候顶上，然后处理这种请求的）；根据BOOL值选择`是否缓存Target对象`
 * action：通过`respondsToSelector`判断target对象是否响应action。如果响应了，则调用`performSelector: withObject:`去执行action方法，并返回该`对象方法返回的值`；如果没有响应，说明根据字符串`Action_actionName:`无法找到对应的`对象方法`，我们可以定义一个`notFound:`方法，如果可以响应，说明target对象中实现了这么一个方法，调用`performSelector: withObject:`去执行`notFound:`方法；如果target对象也不响应`notFound:`方法，删除`cachedTarget`中缓存的`Target对象`，并返回nil（也可以用一个固定的target顶上）
 
-#### 本地组件实现源码分析小结：
+#### 本地组件调用实现源码分析小结：
 
 * `Target_targetName`对应的是`Target_A`这个类，`Action_actionName`对应的是**`Target_A`**中的对象方法**`Action_isPushed:`**，参数使用字典对象放在对象方法`Action_isPushed:`之后
 * 每一个`Target_targetName`对应一个单独的业务，如`Target_A`对应**`AViewController`**，并且将它们放在同一个`组件/模块`（repo）下
