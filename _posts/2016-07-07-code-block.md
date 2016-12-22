@@ -1,9 +1,9 @@
-```
+---
 layout: post
 title: block和C语言函数对比
 date: 2016-07-07 00:00:00
 tags: code
-```
+---
 
 ## 目的
 
