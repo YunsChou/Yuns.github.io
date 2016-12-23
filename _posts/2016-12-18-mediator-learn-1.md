@@ -73,4 +73,13 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 #### 本地组件调用方式小结：
 
 * 调用顺序：**`CTMediator+A`** 中通过`A_viewController:`调用`performTarget: action: params: shouldCacheTarget:`  ——> 在**`CTMediator`**中通过传入的targetName（A），找到**`Target_A`** 对象，通过传入的actionName（isPushed:），找到`Target_A`对象中的对象方法**`Action_isPushed:`** ——> `Target_A`对象调用`Action_isPushed:`方法，返回业务逻辑处理后的**`AViewController对象`**
+
 * 模块分工：`CTMediator+A`决定调用哪个`Target`和`Action`，并将`参数`一并传递给`CTMediator`；`CTMediator`通过`字符串拼接和runtime`去找`Target_A`和对象方法`Action_isPushed:`，并使`Target_A`对象调用对象方法`Action_isPushed:`；`Target_A`在`Action_isPushed:`中通过接收到的参数处理各种业务逻辑，并返回`AViewController对象`
+
+* 思考：既然`Categories`和`Modules`是同一个维护者维护，为什么不放在同一个repo中管理呢？理解作者原话来表述下：它们都是独立模块不需要相互依赖，所以放在不同repo中
+
+  > 作者原话：
+  >
+  > A_Category Pod本质上只是一个方便方法，它对A Pod不存在任何依赖
+  >
+  > `Categories`在实际应用中，是一个单独的repo，所用需要调度其他模块的人，只需要依赖这个repo（这个repo由target-action维护者维护）；`Modules`是target-action所在的模块，也就是提供服务的模块，这也是单独的repo，但无需被其他人依赖，其他人通过category调用到这里的功能
