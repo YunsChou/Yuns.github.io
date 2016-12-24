@@ -92,7 +92,7 @@ pod lib lint
 
 ![img](/assets/images/2016/mediator-learn-0-2.png)
 
->  小结：示例代码[YSTestPodsMe]([https://github.com/YunsChou/YSTestPodsMe](https://github.com/YunsChou/YSTestPodsMe))，`不`可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，需要添加仓库引用路径。在Podfile中引用：
+>  小结：示例代码[YSTestPodsMe]([https://github.com/YunsChou/YSTestPodsMe](https://github.com/YunsChou/YSTestPodsMe))，不可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，需要添加仓库引用路径。在Podfile中引用：
 >
 >  pod 'YSPodsMe', :git => 'https://github.com/YunsChou/YSTestPodsMe.git'
 >
@@ -145,7 +145,7 @@ pod trunk push YSPods.podspec
 
 ![img](/assets/images/2016/mediator-learn-0-6.png)
 
-> 小结：示例代码[YSTestPods]([[https://github.com/YunsChou/YSTestPods](https://github.com/YunsChou/YSTestPods))，可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，`不`需要添加仓库引用路径，*本质上默认路径就是cocopods的路径*。在Podfile中引用：
+> 小结：示例代码[YSTestPods]([[https://github.com/YunsChou/YSTestPods](https://github.com/YunsChou/YSTestPods))，可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，不需要添加仓库引用路径，*本质上默认路径就是cocopods的路径*。在Podfile中引用：
 >
 > pod 'YSPods'
 >
