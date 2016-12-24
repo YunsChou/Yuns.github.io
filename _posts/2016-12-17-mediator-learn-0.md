@@ -129,7 +129,7 @@ pod trunk me
 pod trunk register 2647754496@qq.com "YunsChou" --verbose
 ```
 
-信息格式为：邮箱 + 用户名，注册成功后，可以用`pod trunk me`查看自己的信息
+信息格式为：邮箱 + 用户名，注册成功后会发送一封邮件到你的`邮箱`，根据邮件信息进行验证，验证之后可以用`pod trunk me`查看自己的信息
 
 ![img](/assets/images/2016/mediator-learn-0-4.png)
 
