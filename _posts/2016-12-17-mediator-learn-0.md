@@ -33,9 +33,9 @@ tags: 组件化
 
 ### 一、提交代码到github
 
-1、在自己的github下添加一个repository（一并勾选好gitignore、readme和LICENSE）
+1、在自己的github下添加一个`repository`（一并勾选好gitignore、readme和LICENSE）
 
-2、clone这个repository到本地，此时这个文件夹（`根目录`）中应该只有README.md和LICENSE文件
+2、clone这个`repository`到本地，此时这个文件夹（`根目录`）中应该只有README.md和LICENSE文件
 
 3、准备要提交的工程或代码（包括要提交的库和demo），确保运行没问题
 
@@ -52,6 +52,12 @@ tags: 组件化
 ```
 pod spec create YSPodsMe
 ```
+
+此时，根目录下文件夹及文件如下：
+
+`LICENSE`和`README.md`是创建`repository`时就配置好的，`TestPodspecMe`是工程文件夹，`YSPodsMe`是框架文件夹，`YSPodsMe.podspec`就是 `.podspec` 文件
+
+![img](/assets/images/2016/mediator-learn-0-1.png)
 
 2、编辑 `.podspec` 内容，并保存。（删除注释，保留我们需要配置的字段）以下为示例：
 
@@ -82,20 +88,21 @@ end
 pod lib lint
 ```
 
-4、验证通过后，使用 `git push` 将代码提交到github
+4、验证通过后，使用 `git push` 将代码提交到github，然后在Xcode中使用`YSPodMe`：
+
+![img](/assets/images/2016/mediator-learn-0-2.png)
 
 >  小结：示例代码[YSTestPodsMe]([https://github.com/YunsChou/YSTestPodsMe](https://github.com/YunsChou/YSTestPodsMe))，`不`可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，需要添加仓库引用路径。在Podfile中引用：
 >
 >  pod 'YSPodsMe', :git => 'https://github.com/YunsChou/YSTestPodsMe.git'
 >
 >  至此，如果该库只供自己或团队使用，到这里就算完成了
->
 
 ***
 
 ### 三、提交`.podspec`到`pod trunk`
 
-1、为自己的项目打tag
+1、为自己的项目打tag：
 
 ```
 git tag "v0.0.1"
@@ -114,23 +121,29 @@ pod trunk me
 [!]You neet to register a seesion first.
 ```
 
+![img](/assets/images/2016/mediator-learn-0-3.png)
+
 3、注册 `pod trunk`  账号（如已经注册过，可跳过此环节），执行命令：
 
 ```
 pod trunk register 2647754496@qq.com "YunsChou" --verbose
 ```
 
-信息格式为：邮箱 — 用户名
+信息格式为：邮箱 + 用户名，注册成功后，可以用`pod trunk me`查看自己的信息
 
-注册成功后，可以用`pod trunk me`查看自己的信息
+![img](/assets/images/2016/mediator-learn-0-4.png)
 
-4、将通过上述`一`和`二`步骤的`.podspec`文件提交至`pod trunk`  
+4、将通过上述`一`和`二`步骤的`.podspec`文件提交至`pod trunk`  ：
 
 ```
 pod trunk push YSPods.podspec
 ```
 
-5、等待一段时间（可能是几分钟或几十分钟），在 [https://cocoapods.org](https://cocoapods.org) 中检索自己的框架
+![img](/assets/images/2016/mediator-learn-0-5.png)
+
+5、等待一段时间（可能是几分钟或几十分钟），在 [https://cocoapods.org](https://cocoapods.org) 中检索自己的框架：
+
+![img](/assets/images/2016/mediator-learn-0-6.png)
 
 > 小结：示例代码[YSTestPods]([[https://github.com/YunsChou/YSTestPods](https://github.com/YunsChou/YSTestPods))，可以在 [https://cocoapods.org](https://cocoapods.org)中检索到，`不`需要添加仓库引用路径，*本质上默认路径就是cocopods的路径*。在Podfile中引用：
 >
