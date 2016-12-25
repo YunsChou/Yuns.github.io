@@ -75,13 +75,12 @@ a.run.jump;
 > 2. 当`成员函数`的`参数列表为空`时，可以使用`点语法`调用这类函数
 > 3. 当需要`连续调用`函数式或链式时，成员函数的`返回值`必须为`当前对象`
 >
-> 第一点说明了函数式和链式调用的展现形式，第二点说明了使用点语法的前提条件。
+> 第1点说明了函数式和链式调用的展现形式，第2点说明了使用点语法的前提条件
 >
 > 你可能会产生疑惑：在OC的平常使用中，`[]`是用来调用`方法`的，`.`是用来调用`属性`的，现在`.`也能调用方法了？
 >
-> 在这里，我们需要深刻认识到：**OC点语法的本质是方法调用**
+> 在这里，我们需要深刻认识到：**OC点语法的本质是方法调用**。当我们用@property声明属性时，默认是生成了`一个成员变量和setter/getter方法`，OC中`点语法`不是访问成员变量，而是隐式调用getter/setter方法。同理，用`[]`调用属性时，其实是调用了该属性的getter方法
 >
-> 当我们用@property声明属性时，默认是生成了`一个成员变量和setter/getter方法`，OC中`点语法`不是访问成员变量，而是隐式调用getter/setter方法，同理，用`[]`调用属性时，其实是调用了该属性的getter方法
 
 ## 响应式编程
 
@@ -113,14 +112,15 @@ a.run.jump;
 - (void)responseMethod
 {
     ResponseModel *model = [[ResponseModel alloc] init];
-    //使用KVO监听model的userName属性变化
+    //使用KVO监听属性userName变化
     [model addObserver:self forKeyPath:@"userName" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     self.model = model;
 }
 
+//当属性的值发生变化时，自动调用此方法
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
-    //如果userName属性发生改变，1秒后改变按钮上的内容
+    //如果userName值发生改变，改变按钮上的内容
     if ([keyPath isEqualToString:@"userName"]) {
         NSString *oldName = change[@"old"];
         NSString *newName = change[@"new"];
@@ -132,7 +132,9 @@ a.run.jump;
     }
 }
 
+//点击按钮改变userName的值
 - (IBAction)userNameButtonClick:(id)sender {
+	//userName的值由初始化 '隔壁' 变为 '老王'
     self.model.userName = @"老王";
 }
 ```
