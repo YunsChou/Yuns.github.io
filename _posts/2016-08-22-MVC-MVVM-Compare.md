@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVC和MVVM关系及对比
-date: 2016-08-22 20:48:46
+date: 2016-08-22 00:00:00
 tags: 架构
 ---
 
