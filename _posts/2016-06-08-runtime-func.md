@@ -1,8 +1,8 @@
 ---
 layout: post
-title: KVC字典转模型基础
-date: 2016-06-06 00:00:00
-tags: code
+title: 【runtime】runtime常用方法
+date: 2016-06-08 00:00:00
+tags: runtime
 ---
 
 ## 目的
