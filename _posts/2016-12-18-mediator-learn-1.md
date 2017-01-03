@@ -60,7 +60,7 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 ### 二、本地组件调用实践
 
-业务需求：点击`Home页面`中某个按钮，跳转到`A页面`，我们把A页面看作一个单独的业务，拿出来做成`组件/模块`调用，[点击去DEMO](https://github.com/YSRepository)
+业务需求：点击`Home页面`中某个按钮，跳转到`A页面`，我们把A页面看作一个单独的业务，拿出来做成`组件/模块`调用，[点击去仓库](https://github.com/YSRepository)，[组件化分解DEMO点我](https://github.com/YSRepository/MediatorProjectEvolution)
 
 1、创建一个类`Target_A`，将`AViewController`与其放在同一个`组件/模块`下。在`Target_A.h`中声明`- (UIViewController *)Action_isPushed:(NSDictionary *)params`，在`Target_A.m`中引入`AViewController.h`，并实现方法`Action_isPushed:`，方法中创建`AViewController`对象，并返回该对象
 
@@ -70,7 +70,7 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 4、在我们原来引入`AViewController.h`的类中，将其替换为`CTMediator+A`，并使用`[[CTMediator sharedInstance] A_viewController:params]`替换`[[AViewController alloc] init]`来创建`AViewController`对象和传递参数
 
-> 本地组件调用方式小结：
+> 本地组件调用实践小结：
 >
 > - 调用顺序：**`CTMediator+A`** 中通过`A_viewController:`调用`performTarget: action: params: shouldCacheTarget:`  ——> 在**`CTMediator`**中通过传入的targetName（A），找到**`Target_A`** 对象，通过传入的actionName（isPushed:），找到`Target_A`对象中的对象方法**`Action_isPushed:`** ——> `Target_A`对象调用`Action_isPushed:`方法，返回业务逻辑处理后的**`AViewController对象`**
 > - 模块分工：`CTMediator+A`决定调用哪个`Target`和`Action`，并将`参数`一并传递给`CTMediator`；`CTMediator`通过`字符串拼接和runtime`去找`Target_A`和对象方法`Action_isPushed:`，并使`Target_A`对象调用对象方法`Action_isPushed:`；`Target_A`在`Action_isPushed:`中通过接收到的参数处理各种业务逻辑，并返回`AViewController对象`
@@ -79,8 +79,5 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 > 思考：既然`Categories`和`Modules`是同一个维护者维护，为什么不放在同一个repo中管理呢？
 >
-> 作者原话：`A_Category Pod`本质上只是一个方便方法，它对`A Pod`不存在任何依赖
->
-> `Categories`在实际应用中，是一个单独的repo，所用需要调度其他模块的人，只需要依赖这个repo（这个repo由target-action维护者维护）；`Modules`是target-action所在的模块，也就是提供服务的模块，这也是单独的repo，但无需被其他人依赖，其他人通过category调用到这里的功能
->
-> 理解作者原话来表述下：它们都是独立模块不需要相互依赖，所以放在不同repo中
+> * 作者原话：`A_Category Pod`本质上只是一个方便方法，它对`A Pod`不存在任何依赖。`Categories`在实际应用中，是一个单独的repo，所用需要调度其他模块的人，只需要依赖这个repo（这个repo由target-action维护者维护）；`Modules`是target-action所在的模块，也就是提供服务的模块，这也是单独的repo，但无需被其他人依赖，其他人通过category调用到这里的功能
+> * 理解作者原话总结下：它们都是独立模块不需要相互依赖，所以放在不同repo中
