@@ -9,6 +9,8 @@ tags: code
 
 通过对比block和C语言函数，理解block是`函数指针`的概念
 
+[DEMO点我](https://github.com/YunsChou/ExercisProject/tree/master/链式函数式响应式编程/EX-RAC-DEMO/block和C函数)
+
 ## 何为block
 
 1. block就是`函数指针`，可以将函数当做`变量、参数`来传递

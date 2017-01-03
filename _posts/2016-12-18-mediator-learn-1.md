@@ -11,6 +11,10 @@ tags: 组件化
 
 2、结合CTMediator作者博客进行源码解读
 
+[组件化分解DEMO点我](https://github.com/YSRepository/MediatorProjectEvolution)
+
+[组件化代码仓库点我](https://github.com/YSRepository)
+
 ### 说明
 
 1、部分关键描述会直接引用作者原话（可能会附注自己的理解），以免有失偏颇
@@ -60,7 +64,7 @@ CTMediator是一个单例，主要是基于Mediator模式和Target-Action模式�
 
 ### 二、本地组件调用实践
 
-业务需求：点击`Home页面`中某个按钮，跳转到`A页面`，我们把A页面看作一个单独的业务，拿出来做成`组件/模块`调用，[点击去仓库](https://github.com/YSRepository)，[组件化分解DEMO点我](https://github.com/YSRepository/MediatorProjectEvolution)
+业务需求：点击`Home页面`中某个按钮，跳转到`A页面`，我们把A页面看作一个单独的业务，拿出来做成`组件/模块`调用
 
 1、创建一个类`Target_A`，将`AViewController`与其放在同一个`组件/模块`下。在`Target_A.h`中声明`- (UIViewController *)Action_isPushed:(NSDictionary *)params`，在`Target_A.m`中引入`AViewController.h`，并实现方法`Action_isPushed:`，方法中创建`AViewController`对象，并返回该对象
 
