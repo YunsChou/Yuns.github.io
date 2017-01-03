@@ -88,7 +88,16 @@ end
 pod lib lint
 ```
 
-4、验证通过后，使用 `git push` 将代码提交到github，然后在Xcode中使用`YSPodMe`：
+4、验证通过后，为自己的项目打tag：
+
+```
+git tag "v0.0.1"
+git push --tags
+```
+
+*`tag` 用于创建一个标签，指向软件开发中的一个关键时期，比如版本号更新的时候可以建一个`v1.0`, ` v1.2`之类的标签，这样在以后回顾的时候会比较方便*
+
+5、使用 `git push` 将代码提交到github，然后在Xcode中使用`YSPodMe`：
 
 ![img](/assets/images/2016/mediator-learn-0-2.png)
 
@@ -102,14 +111,7 @@ pod lib lint
 
 ### 三、提交`.podspec`到`pod trunk`
 
-1、为自己的项目打tag：
-
-```
-git tag "v0.0.1"
-git push --tags
-```
-
-2、查看 `pod trunk` 的注册信息，执行命令：
+1、查看 `pod trunk` 的注册信息，执行命令：
 
 ```
 pod trunk me
@@ -123,7 +125,7 @@ pod trunk me
 
 ![img](/assets/images/2016/mediator-learn-0-3.png)
 
-3、注册 `pod trunk`  账号（如已经注册过，可跳过此环节），执行命令：
+2、注册 `pod trunk`  账号（如已经注册过，可跳过此环节），执行命令：
 
 ```
 pod trunk register 2647754496@qq.com "YunsChou" --verbose
@@ -133,7 +135,7 @@ pod trunk register 2647754496@qq.com "YunsChou" --verbose
 
 ![img](/assets/images/2016/mediator-learn-0-4.png)
 
-4、将通过上述`一`和`二`步骤的`.podspec`文件提交至`pod trunk`  ：
+3、将通过上述`一`和`二`步骤的`.podspec`文件提交至`pod trunk`  ：
 
 ```
 pod trunk push YSPods.podspec
@@ -141,7 +143,7 @@ pod trunk push YSPods.podspec
 
 ![img](/assets/images/2016/mediator-learn-0-5.png)
 
-5、等待一段时间（可能是几分钟或几十分钟），在 [https://cocoapods.org](https://cocoapods.org) 中检索自己的框架：
+4、等待一段时间（可能是几分钟或几十分钟），在 [https://cocoapods.org](https://cocoapods.org) 中检索自己的框架：
 
 ![img](/assets/images/2016/mediator-learn-0-6.png)
 
