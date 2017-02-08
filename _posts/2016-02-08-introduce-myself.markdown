@@ -59,7 +59,7 @@ tags: 关于我
 4. 熟练使用GCD等进行多线程任务开发
 5. 熟练使用MVC、MVVM等常用的设计模式
 6. 熟练使用Realm和SQLite，熟悉CoreData
-7. 熟练使用Masonry、ReactiveCocoa等第三方库
+7. 熟练使用Masonry、ReactiveCocoa、AsyncDisplayKit等第三方库
 8. 熟练使用SVN、Git代码管理工具
 9. 熟悉一些前端技术HTML、CSS、JavaScript等
 
@@ -90,17 +90,16 @@ tags: 关于我
 
 项目职责：  
 * 负责项目搭建及任务拆分  	
-* 制定开发计划及时间节点  		
+* 制定开发计划及时间节点  	
 * 优化项目性能提升用户体验    
 * 协助小组同事分析需求及攻克技术难点  
 
 技术细节：  
 * 使用Target对多个相似版本进行管理  	    
-* 使用Realm对项目数据进行本地存储  	
+* 使用Realm对项目数据进行本地存储  
 * 使用runtime实现对象代理快速赋值  
 * 使用AOP进行数据上报埋点等  
 * 使用AVPlayer对视频进行播放  
-* 使用Realm保存用户加载过的数据  
 * 使用KVO优化新闻详情加载过慢体验问题  
 * 通过缓存高度等策略优化UITableView滑动卡顿问题  
 * 为适应高自定制的需求，基于自己封装的新闻框架进行开发  
