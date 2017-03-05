@@ -11,9 +11,7 @@ tags: 组件化
 
 2、结合CTMediator作者博客进行源码解读
 
-[组件化分解DEMO点我](https://github.com/YSRepository/MediatorProjectEvolution)
-
-[组件化代码仓库点我](https://github.com/YSRepository)
+[组件化代码仓库点我](https://github.com/ModuleCTMediator)
 
 ### 说明
 
