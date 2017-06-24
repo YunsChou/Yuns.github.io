@@ -53,12 +53,12 @@ tags: 关于我
 
 ---
 
-1. 熟练掌握Objective-C编程语言和Xcode开发环境，具有良好的编程风格和习惯
+1. 熟练掌握Objective-C和Swift编程语言，具有良好的编程风格和习惯
 2. 熟练掌握iOS证书配置、APNs服务器证书制作及项目发布流程  
 3. 熟练掌握网络请求、JSON和XML解析
 4. 熟练使用GCD等进行多线程任务开发
 5. 熟练使用MVC、MVVM等常用的设计模式
-6. 熟练使用Realm和SQLite，熟悉CoreData
+6. 熟练使用Realm和SQLite数据库，熟悉CoreData
 7. 熟练使用Masonry、ReactiveCocoa、AsyncDisplayKit等第三方库
 8. 熟练使用SVN、Git代码管理工具
 9. 熟悉一些前端技术HTML、CSS、JavaScript等
@@ -90,7 +90,7 @@ tags: 关于我
 
 项目职责：  
 * 负责项目搭建及任务拆分  	
-* 制定开发计划及时间节点  	
+ * 制定开发计划及时间节点  
 * 优化项目性能提升用户体验    
 * 协助小组同事分析需求及攻克技术难点  
 
@@ -149,7 +149,7 @@ tags: 关于我
 
 [YsCrideo](https://github.com/YunsChou/YsCrideo) 一个功能完整的视频播放小项目，使用LeanCloud提供数据支持
 
-
+[LovePlay](https://github.com/YunsChou/LovePlay) 使用ASDK、Masonry、RAC、组件化、Swift等多种方式，仿写网易《爱玩》精简版
 
 
 
