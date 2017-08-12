@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【组件化】组件化的配置及命令行的使用
+title: 【组件化-2】组件化的配置及命令行的使用
 date: 2017-08-08 00:00:00
 tags: 组件化
 ---
@@ -26,7 +26,7 @@ pod repo add [本地repo名称] [远程仓库http地址]
 pod lib create YsModuleA
 ```
 
-![img](/assets/images/2017/module-config-1.png)
+![img](/assets/images/2017/mediator-learn-2-1.png)
 
 3、将要组件化的文件添加到Class文件夹下
 
@@ -49,7 +49,7 @@ git push
 
 如果是首次提交，需要关联远程仓库，参照代码托管平台创建的空项目即可
 
-![img](/assets/images/2017/module-config-2.png)
+![img](/assets/images/2017/mediator-learn-2-2.png)
 
 2、使用命令提交组件的.podspec到远程仓库
 
@@ -64,7 +64,7 @@ pod repo push [本地仓库名] YsModuleA.podspec
 
 1、在Podfile中，添加远程仓库地址，source '[远程仓库地址]'
 
-![img](/assets/images/2017/module-config-3.png)
+![img](/assets/images/2017/mediator-learn-2-3.png)
 
 2、使用命令导入组件
 
@@ -76,14 +76,14 @@ pod install
 
 1、图片：在Assets文件夹中创建Images.xcassets用来放置图片
 
-![img](/assets/images/2017/module-config-4.png)
+![img](/assets/images/2017/mediator-learn-2-4.png)
 
 2、其它资源文件：直接放在Assets文件夹下
 
 3、将组件资源打包到bundle中
 
-![img](/assets/images/2017/module-config-5.png)
+![img](/assets/images/2017/mediator-learn-2-5.png)
 
 4、通过访问组件的bundle来获取图片等资源
 
-![img](/assets/images/2017/module-config-6.png)
+![img](/assets/images/2017/mediator-learn-2-6.png)
