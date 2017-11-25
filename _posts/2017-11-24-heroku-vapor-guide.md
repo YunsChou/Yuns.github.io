@@ -55,7 +55,7 @@ git push -u origin master
 
 3、进入项目根目录，执行 `touch Procfile` 创建名为Procfile的文件，并用编辑打开添加 `web: Run --env=production --port=$PORT` ，然后push到GitHub
 
-4、将Procfile文件提交到Github后，刷新Heroku控制面板，在Dyno处可以看到多了Procfile中的内容
+4、将Procfile文件提交到GitHub后，刷新Heroku控制面板，在Dyno处可以看到多了Procfile中的内容
 
 5、重新进入 `Deploy->Manual deploy` ，点击 `Deploy Branch` 按钮重新部署
 
@@ -63,8 +63,8 @@ git push -u origin master
 
 ### 四、注意
 
-1、Procfile文件可以在新建项目后一并创建，提交至Github，此处后添加只为演示
+1、Procfile文件可以在新建项目后一并创建，提交至GitHub，此处后添加只为演示
 
 2、在Heroku中可以选择自动部署，当选中的分支（执行自动部署的分支）每次有代码push上来的时候，都会执行自动部署。如果你是测试或练习项目，没有什么影响，如果是正式项目，请慎重选择并做好分支控制
 
-3、本项目 [Heroku链接](https://swift-vapor-heroku.herokuapp.com)，[Github链接](https://github.com/YunsChou/HelloVapor)
+3、本项目 [Heroku链接](https://swift-vapor-heroku.herokuapp.com)，[GitHub链接](https://github.com/YunsChou/HelloVapor)
