@@ -61,7 +61,6 @@ tags: 关于我
 7. 熟练使用Masonry、ReactiveCocoa、AsyncDisplayKit等第三方库
 8. 熟练使用SVN、Git代码管理工具
 9. 熟悉开发语言JavaScript、Python等
-10. iOS安全及逆向研究
 
 
 ### 项目经验（包括但不限于）
