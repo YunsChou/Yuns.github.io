@@ -69,7 +69,8 @@ tags: 关于我
 
 **XXXXX （2017年7月 ～ 2018年6月）**
 
-> XXXXX是一个新能源汽车分时租赁项目
+> XXXXX是一个新能源汽车分时租赁项目  
+> https://itunes.apple.com/cn/app/id1311033913
 
 项目职责：
 
@@ -104,7 +105,7 @@ tags: 关于我
 
 **XXXXX （2015年12月 ～ 2017年6月）**
 
-> XXXXX是一款新闻类项目（目前投放在XXX市场运营名为XXXXX），APP内包涵新闻资讯、娱乐段子、GIF图集、视频播放等功能  
+> XXXXX是一款新闻类项目（目前投放在XXX市场运营名为XXXXX），APP内包涵新闻资讯、娱乐段子、GIF图集、视频播放等功能(目前服务器已停止维护)   
 > https://itunes.apple.com/us/app/id1173808071
 
 项目职责：
